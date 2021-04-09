@@ -10228,15 +10228,29 @@ span, .text-typing-items {
   border: none;
   background: white;
   padding: 25px;
-  border-right: 10px solid #f4623a;
-  border-left: 10px solid #f4623a;
   margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 3px rgba(0,0,0,0.24);
 }
 .space {
   padding: 15px;
 }
 .profile {
   margin-bottom: 20px;
+}
+.color {
+  background: #f4623a;
+  color: white;
+  border: none;
+  margin-top: 90px;
+}
+.skills {
+  padding: 20px;
+}
+.float-left {
+  float: left;
+  text-align: center;
+  padding: 20px;
 }
 
 
