@@ -594,7 +594,7 @@ pre code {
 .col-xl,
 .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg,
 .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
-.col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm,
+.col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm,
 .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col,
 .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
   position: relative;
@@ -1089,7 +1089,7 @@ pre code {
   }
 
   .col-md-6 {
-    flex: 0 0 50%;
+    flex: 0 0 25%;
     max-width: 50%;
   }
 
@@ -6076,6 +6076,8 @@ a.close.disabled {
 
 .bg-primary {
   background-color: #f4623a !important;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10227,16 +10229,27 @@ span, .text-typing-items {
 .holder {
   border: none;
   background: white;
-  padding: 25px;
   margin-bottom: 10px;
-  border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 3px rgba(0,0,0,0.24);
+  z-index: 2;
+  border-radius: 8px;
 }
 .space {
   padding: 15px;
 }
 .profile {
   margin-bottom: 20px;
+  width: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-left: 30px;
+}
+.sea {
+  width: 100%;
+  height: 110px;
+  margin: 0 0 -50px 0;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
 }
 .color {
   background: #f4623a;
@@ -10252,6 +10265,47 @@ span, .text-typing-items {
   text-align: center;
   padding: 20px;
 }
+.frame {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
 
-
+.word {
+  padding: 15px;
+}
+.facebook {
+  width: 50%;
+  height: 50px;
+  float: left;
+  border-radius: 0 0 0 8px;
+  border: 1px solid #e0dcdc;
+  border-bottom: none;
+  bottom: 0;
+  background: white;
+  color: grey;
+}
+.facebook:hover {
+  background: #f3eeee;
+}
+.messenger {
+  width: 50%;
+  height: 50px;
+  float: left;
+  border-radius: 0 0 8px 0;
+  border: 1px solid #e0dcdc;
+  border-bottom: none;
+  bottom: 0;
+  background: white;
+  color: grey;
+}
+.messenger:hover {
+  background: #f3eeee;
+}
+.fa-facebook-square {
+  font-size: 23px;
+}
+.fa-facebook-messenger {
+  font-size: 23px;
+}
 
