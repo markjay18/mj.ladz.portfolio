@@ -10255,7 +10255,7 @@ span, .text-typing-items {
   background: #f4623a;
   color: white;
   border: none;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .skills {
   padding: 20px;
@@ -10302,10 +10302,20 @@ span, .text-typing-items {
 .messenger:hover {
   background: #f3eeee;
 }
-.fa-facebook-square {
-  font-size: 23px;
+.fa-facebook {
+  font-size: 30px;
+  color: #3b5998;
+  background: #e0e0e0;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .fa-facebook-messenger {
-  font-size: 23px;
+  font-size: 30px;
+  color: #006AFF;
+  background: #e0e0e0;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
