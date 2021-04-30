@@ -9703,7 +9703,6 @@ button.bg-dark:focus {
   .text-md-left {
     text-align: left !important;
   }
-
   .text-md-right {
     text-align: right !important;
   }
@@ -10159,8 +10158,10 @@ header.masthead h1 {
   float: left;
   perspective: 500px; 
   border: none;
-  padding: 6px;
+  padding: 10px;
   background: #f4f4f5;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 .flip {
   position: relative;
@@ -10179,22 +10180,21 @@ header.masthead h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #f4623a;
   color: white;
   font-size: 16px;
   border-radius: 4px;
   backface-visibility: hidden;
 }
 .back {
-  background: #f4623a;
+  background: white;
   transform: rotateY( 180deg );
   padding: 0;
+  width: 100%;
 }
 .front-head {
   position: relative;
   height: 160px;
   background: white;
-  margin-bottom: 10px;
 }
 .top {
   margin-top: 20px;
@@ -10228,11 +10228,12 @@ span, .text-typing-items {
 }
 .holder {
   border: none;
-  background: #eff3f7;
+  background: #ea673e00;
   margin-bottom: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 3px rgba(0,0,0,0.24);
   z-index: 2;
   border-radius: 4px;
+  color: white;
 }
 .space {
   padding: 15px;
@@ -10241,11 +10242,11 @@ span, .text-typing-items {
   margin-bottom: 20px;
   width: 100px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #f4623a;
 }
 .sea {
   width: 100%;
-  height: 156px;
+  height: 160px;
   margin: 0 0 -70px 0;
   z-index: 1;
   border-radius: 4px 4px 0 0;
@@ -10255,7 +10256,7 @@ span, .text-typing-items {
   background: #f4623a;
   color: white;
   border: none;
-  margin-top: 120px;
+  margin-top: 94px;
 }
 .skills {
   padding: 20px;
@@ -10272,20 +10273,20 @@ span, .text-typing-items {
 }
 
 .word {
+  font-family: 'Roboto', sans-serif;
   padding: 15px;
 }
 .dl-cv {
+  position:relative;
   font-family: 'Roboto', sans-serif;
-  width: 50%;
+  width: 20%;
   height: 50px;
   border: 1px solid #e0dcdc;
-  border-bottom: none;
   margin-bottom: 50px;
   background: white;
   color: #219fd0;
-}
-.dl-cv:hover {
-  background: #f3eeee;
+  transition: 1s ease;
+  transform: translateZ(0);
 }
 .messenger {
   width: 50%;
@@ -10303,16 +10304,65 @@ span, .text-typing-items {
 }
 .fa-facebook {
   font-size: 20px;
-  color: #6c757d;
+  color: #aecce6;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 6px;
 }
+.fa-facebook:hover {
+  font-size: 25px;
+  transition: .3s ease;
+  color: #219fd0;
+  margin-left: 10px;
+  
+}
 .fa-facebook-messenger {
   font-size: 20px;
-  color: #6c757d;
+  color: #aecce6;
   border-radius: 50%;
   cursor: pointer;
+}
+.fa-facebook-messenger:hover {
+  font-size: 25px;
+  transition: .3s ease;
+  color: #219fd0;
+  margin-right: 10px;
+}
+.fa-html5:hover {
+  width: 100px;
+  transition: 1s ease;
+}
+.fa-css3-alt:hover {
+  width: 100px;
+  transition: 1s ease;
+}
+.fa-php:hover {
+  width: 100px;
+  transition: 1s ease;
+}
+.fa-js-square:hover {
+  width: 100px;
+  transition: 1s ease;
+}
+.fa-git-alt:hover {
+  width: 100px;
+  transition: 1s ease;
+}
+.fa-bootstrap:hover {
+  width: 100px;
+  transition: 1s ease;
+}
+.fa-node:hover {
+  width: 100px;
+  transition: 1s ease;
+}
+.fa-react:hover {
+  width: 100px;
+  transition: 1s ease;
+}
+.fa-npm:hover {
+  width: 100px;
+  transition: 1s ease;
 }
 .dev {
   width: 60px;
@@ -10320,3 +10370,242 @@ span, .text-typing-items {
 .cv {
   width: 35%;
 }
+b { 
+  padding: 10px;
+}
+.txt {
+  color: #219fd0;
+  font-size: 14px;
+}
+.globe {
+  position: relative;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 25px 10px 25px;
+  background: #219fd0;
+  cursor: pointer;
+  transition: 1s ease;
+  color: white;
+}
+.repo {
+  position: relative;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 25px 10px 25px;
+  background: #219fd0;
+  cursor: pointer;
+  transition: 1s ease;
+  color: white;
+}
+
+.globe, .repo {
+  margin-top: 30px;
+}
+.globe:hover {
+  background: #efecec;
+  color: black;
+}
+
+.repo:hover {
+  background: #efecec;
+  color: black;
+}
+.resume {
+  background: #219fd0;
+}
+/*Portfolio style*/
+.back-style {
+  background: #f4f4f5;
+  border: none; 
+  padding: 50px; 
+}
+.front-style {
+  position: absolute;
+  background: white;
+  width: 248px; 
+  height: 160px; 
+  border-radius: 0px 0px 4px 4px; 
+  margin-top: -10px; 
+}
+.img {
+  position: relative;
+  width: 248px; 
+  height: 160px; 
+  border-radius: 4px 4px 0px 0px; 
+}
+.description {
+  font-family: 'Roboto', sans-serif;
+  background: white; 
+  color: black; 
+  padding: 10px; 
+  border-radius: 4px; 
+}
+.heroku {
+  width: 13px;
+  margin-top: -4px;
+}
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 30px;
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+.smile {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 25px;
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+.fa-download {
+  position: relative;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+.fa-arrow-right {
+  position: relative;
+  animation: kanan 1.5s infinite;
+  -webkit-animation: kanan 1.5s infinite;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes kanan {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes kanan {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+.dl-cv:before{
+  content:"";
+  position:absolute;  z-index:-1;
+  top:0; left:0; right:0; bottom: 0; /*This will fill up the entire block.*/
+  background:#2098d1; color:white; 
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+  transition: transform 0.5s ease-out;
+}
+.dl-cv:hover{  color:white;  }
+.dl-cv:hover:before {
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); /*creates bounce*/
+}
+.bounce {
+  position: relative;
+  animation: up 1.5s infinite;
+  -webkit-animation: up 1.5s infinite;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+strong {
+  background: #868383;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+}
+
