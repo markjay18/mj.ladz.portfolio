@@ -10634,10 +10634,13 @@ strong {
 }
 #translate {
   display: none;
+  text-align: justify;
 }
 .eng {
-  border: .5px solid grey;
+  border: .5px solid #d4d4d4;
   border-radius: 4px;
+  color: grey;
+  margin-top: 5px;
 }
 #hide {
   border: none;
@@ -10645,5 +10648,9 @@ strong {
   background: #e85a5a;
   color: white;
   display: none;
+}
+.we {
+  color: #219fd0;
+  font-size: 30px;
 }
 
