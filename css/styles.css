@@ -10636,7 +10636,17 @@ strong {
   display: none;
   text-align: justify;
 }
+#translate1 {
+  display: none;
+  text-align: justify;
+}
 .eng {
+  border: .5px solid #d4d4d4;
+  border-radius: 4px;
+  color: grey;
+  margin-top: 5px;
+}
+.eng1 {
   border: .5px solid #d4d4d4;
   border-radius: 4px;
   color: grey;
@@ -10647,10 +10657,24 @@ strong {
   border-radius: 4px;
   background: #e85a5a;
   color: white;
-  display: none;
+}
+#hide1 {
+  border: none;
+  border-radius: 4px;
+  background: #e85a5a;
+  color: white;
 }
 .we {
   color: #219fd0;
   font-size: 30px;
 }
+.marigin-top {
+  margin-top: 50px;
+}
+.dana {
+  width: 102%; 
+  height: 80px;
+}
+
+
 
